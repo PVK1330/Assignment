@@ -11,9 +11,10 @@ const Products = () => {
     return (
         <>
             <AddProduct onSubmit={onNewProductAdd} />
-            {products.map(data => {
+           <div className="container.flex"> {products.map(data => {
                 return (<ProductData product={data} />)
             })}
+            </div>
         </>
     )
 }
